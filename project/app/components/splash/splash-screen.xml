@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns="http://schemas.nativescript.org/tns.xsd" 
+           rows="*, auto, auto, auto, *" 
+           class="splash-container">
+    
+    <GridLayout row="1" class="logo-container" horizontalAlignment="center">
+        <Image src="{{ waterDropSource }}" 
+               width="140" 
+               height="140"
+               class="logo-image" />
+        <Label text="💧" 
+               class="water-emoji"
+               horizontalAlignment="right"
+               verticalAlignment="top" />
+    </GridLayout>
+    
+    <StackLayout row="2" class="text-container">
+        <Label text="AquaApp" 
+               class="app-title"/>
+        <Label text="Smart Water Management" 
+               class="app-subtitle"/>
+    </StackLayout>
+    
+    <StackLayout row="3" class="loading-container">
+        <ActivityIndicator busy="true" 
+                         class="loading-indicator"/>
+        <Label text="{{ loadingText }}" 
+               class="loading-text"/>
+    </StackLayout>
+</GridLayout>
